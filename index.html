@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>社区便民联络码</title>
+    <title>社区警务便民联络码</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -13,79 +13,59 @@
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6" /></svg>
         </button>
         <div>
-          <p class="eyebrow">扫码即用 · 无需安装</p>
-          <h1 id="pageTitle">社区便民联络码</h1>
+          <p class="eyebrow">梅岭北路派出所 · 扫码即用</p>
+          <h1 id="pageTitle">社区警务便民联络码</h1>
         </div>
-        <button class="icon-button" id="adminToggle" aria-label="台账">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" /></svg>
+        <button class="icon-button" data-action="call" data-phone="62655555" aria-label="拨打值班电话">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3.09 5.18 2 2 0 0 1 5.11 3h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.63 2.61a2 2 0 0 1-.45 2.11L9 10.73a16 16 0 0 0 4.27 4.27l1.29-1.29a2 2 0 0 1 2.11-.45c.84.3 1.71.51 2.61.63A2 2 0 0 1 22 16.92z" /></svg>
         </button>
       </header>
 
       <main>
         <section class="view active" data-view="home">
-          <div class="notice">
+          <div class="notice police-notice">
             <div>
-              <strong>遇到正在发生的危险，请优先拨打 110 / 120。</strong>
-              <span>本页面适合社区日常联络、线索登记和办事咨询。</span>
+              <strong>梅岭北路派出所</strong>
+              <span>求助、咨询、线索上报、办事联系</span>
             </div>
-            <button class="text-button" data-action="call" data-phone="110">拨打 110</button>
+            <button class="text-button hot" data-action="call" data-phone="62655555">立即拨打</button>
           </div>
 
-          <div class="hero-panel">
-            <p class="hero-kicker">社区事务，一码联络</p>
-            <h2>求助、咨询、上报、办事、联系都放在一个入口。</h2>
-            <div class="hero-meta">
-              <span>定位辅助</span>
-              <span>语音转文字</span>
-              <span>本地台账</span>
-            </div>
-          </div>
+          <button class="dial-panel" data-action="call" data-phone="62655555">
+            <span>一键拨号</span>
+            <strong>62655555</strong>
+          </button>
 
           <div class="grid-menu">
-            <button class="module-card danger" data-go="help">
+            <button class="module-card priority" data-go="help">
               <span class="card-icon">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 16H3L12 3z" /><path d="M12 9v4M12 17h.01" /></svg>
               </span>
-              <span>
-                <strong>一键紧急求助</strong>
-                <small>定位、语音、快速拨号</small>
-              </span>
+              <strong>一键紧急求助</strong>
             </button>
             <button class="module-card" data-go="consult">
               <span class="card-icon">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" /></svg>
               </span>
-              <span>
-                <strong>AI 便民咨询</strong>
-                <small>常见问题秒级答复</small>
-              </span>
+              <strong>警务咨询</strong>
             </button>
             <button class="module-card" data-go="report">
               <span class="card-icon">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" /><circle cx="12" cy="13" r="3" /></svg>
               </span>
-              <span>
-                <strong>隐患线索上报</strong>
-                <small>拍照、分类、留位置</small>
-              </span>
+              <strong>线索上报</strong>
             </button>
             <button class="module-card" data-go="services">
               <span class="card-icon">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4z" /><path d="M8 8h8M8 12h8M8 16h5" /></svg>
               </span>
-              <span>
-                <strong>码上便民办事</strong>
-                <small>材料清单、流程提醒</small>
-              </span>
+              <strong>便民办事</strong>
             </button>
             <button class="module-card wide" data-go="contact">
               <span class="card-icon">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3.09 5.18 2 2 0 0 1 5.11 3h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.63 2.61a2 2 0 0 1-.45 2.11L9 10.73a16 16 0 0 0 4.27 4.27l1.29-1.29a2 2 0 0 1 2.11-.45c.84.3 1.71.51 2.61.63A2 2 0 0 1 22 16.92z" /></svg>
               </span>
-              <span>
-                <strong>社区联络方式</strong>
-                <small>电话、地址、微信二维码</small>
-              </span>
+              <strong>社区联络员</strong>
             </button>
           </div>
         </section>
@@ -93,16 +73,16 @@
         <section class="view" data-view="help">
           <form class="form-card" id="helpForm">
             <label>
-              <span>你的称呼</span>
-              <input name="name" autocomplete="name" placeholder="例如：王先生" />
+              <span>姓名</span>
+              <input name="name" autocomplete="name" placeholder="请输入姓名" />
             </label>
             <label>
               <span>联系电话</span>
-              <input name="phone" inputmode="tel" autocomplete="tel" placeholder="便于回拨确认" required />
+              <input name="phone" inputmode="tel" autocomplete="tel" placeholder="便于民警及时回拨" required />
             </label>
             <label>
               <span>求助内容</span>
-              <textarea name="content" rows="5" placeholder="请简单说明发生了什么，也可以点下方语音按钮" required></textarea>
+              <textarea name="content" rows="5" placeholder="请简单说明情况，也可以使用下方语音输入" required></textarea>
             </label>
             <div class="location-box" id="helpLocation">尚未获取位置</div>
             <div class="button-row">
@@ -110,11 +90,11 @@
               <button type="button" class="secondary-button" data-action="speech" data-target="help">语音输入</button>
             </div>
             <button type="submit" class="primary-button danger">提交求助</button>
-            <button type="button" class="ghost-button" data-action="call" data-phone="110">直接拨打 110</button>
+            <button type="button" class="ghost-button hotline-button" data-action="call" data-phone="62655555">直接拨打 62655555</button>
           </form>
           <div class="quiet-panel">
             <h3>低调求助模式</h3>
-            <p>进入后页面会降低视觉提示，只保留定位和录音按钮。H5 不能在锁屏或退出浏览器后持续录音，正式上线需用 HTTPS 并明确告知授权。</p>
+            <p>适合不方便长时间操作手机时使用。当前演示版可记录定位与录音事件，正式上线建议对接后端存储和权限管理。</p>
             <button class="secondary-button" data-go="quiet">进入低调模式</button>
           </div>
         </section>
@@ -123,7 +103,7 @@
           <div class="quiet-status">
             <span>低调模式</span>
             <strong id="quietTimer">00:00</strong>
-            <p id="quietHint">点击按钮后会请求浏览器录音权限，录音仅在当前页面有效。</p>
+            <p id="quietHint">点击按钮后会请求浏览器录音权限，录音仅在当前页面演示有效。</p>
           </div>
           <div class="quiet-actions">
             <button class="round-action" id="quietLocate" aria-label="发送位置">
@@ -177,56 +157,13 @@
         </section>
 
         <section class="view" data-view="contact">
-          <div class="profile-card">
-            <div class="avatar">联</div>
-            <div>
-              <p class="eyebrow">社区联络员</p>
-              <h2>张明</h2>
-              <p>负责：日常咨询、线索登记、便民事项指引</p>
-            </div>
+          <div class="station-card">
+            <strong>梅岭北路派出所</strong>
+            <span>单位地址：梅岭北路1238号</span>
+            <p>如情况紧急、表达不便或需要当面求助，也可以直接来所反映。</p>
+            <button class="text-button hot" data-action="call" data-phone="62655555">拨打值班电话 62655555</button>
           </div>
-          <div class="contact-list">
-            <button data-action="call" data-phone="13800000000">
-              <strong>值班电话</strong>
-              <span>138 0000 0000</span>
-            </button>
-            <button data-action="copy" data-copy="community-helper">
-              <strong>工作微信</strong>
-              <span>community-helper</span>
-            </button>
-            <button data-action="map">
-              <strong>服务地址</strong>
-              <span>XX 社区服务点一楼</span>
-            </button>
-          </div>
-          <div class="qr-card">
-            <div class="fake-qr" aria-label="微信二维码占位">
-              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-            </div>
-            <p>这里替换成你的工作微信二维码图片即可。</p>
-          </div>
-        </section>
-
-        <section class="view" data-view="admin">
-          <div class="dashboard">
-            <article>
-              <span>求助</span>
-              <strong id="statHelp">0</strong>
-            </article>
-            <article>
-              <span>线索</span>
-              <strong id="statReport">0</strong>
-            </article>
-            <article>
-              <span>待处理</span>
-              <strong id="statOpen">0</strong>
-            </article>
-          </div>
-          <div class="ledger-toolbar">
-            <button class="secondary-button" id="exportData">导出台账</button>
-            <button class="ghost-button" id="clearData">清空本机演示数据</button>
-          </div>
-          <div class="ledger-list" id="ledgerList"></div>
+          <div class="officer-list" id="officerList"></div>
         </section>
       </main>
     </div>
